@@ -1,6 +1,12 @@
 @import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap";
 @import "https://fonts.gstatic.com";
 @import "https://fonts.googleapis.com";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap');
+
+:root {
+    --color-green:#50fa7b;
+}  
 
 * {
     margin: 0;
@@ -11,6 +17,7 @@
 body {
     background: #282a36;
     font-family: 'Source Sans Pro', sans-serif;
+    color: whitesmoke
 }
 
 header {
@@ -18,18 +25,66 @@ header {
     border-bottom: 2px solid #333;
     background: rgba(0, 0, 0, 0.1);
 }
-header div{
+
+.links {
     text-align: center;
 
 }
-header div a {
+
+.links a {
     color:white;
     font-size: 30px;
     line-height: 40px;
     margin: 0 16px;
     text-decoration: initial;
-          }
-header div a:hover {
-    color: #50fa7b ;
+}
+
+.links a:hover {
+    color: var(--color-green) ;
     transition: color 500ms;
+}
+
+#wrapper {
+    text-align: center;
+    padding: 32px;
+} 
+
+#wrapper img {
+    border-radius: 50%;
+    border: 5px solid var(--color-green); 
+    margin-bottom: 32px;
+    height: 300px;
+}
+
+#wrapper h1 {
+    font-size: 45px;
+    line-height: 52px; 
+    font-weight: bold;
+}
+
+#wrapper h2 {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#wrapper p {
+    max-width: 500px;
+    margin: 15px auto;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+#wrapper p a {
+    font-size: 25px;
+    line-height: 34px;
+    color: var(--color-green);  
+    opacity: 0.6;
+}
+
+#links-footer a{
+    border-bottom: 1px solid var(--color-green);
+    opacity: inherit;
 }
